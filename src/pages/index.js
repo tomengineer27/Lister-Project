@@ -11,9 +11,14 @@ function Home() {
   const { lists, setLists } = useContext(ListerContext);
 
   useEffect(() => {
-    setLists(JSON.parse(localStorage.getItem("lists")));
-    setListName("")
-  }, [setListName]);
+    const localLists = localStorage.getItem("lists");
+    if (!localLists) {
+      localStorage.setItem("lists", "[]");
+    } else {
+      setLists(JSON.parse(localLists));
+    }
+    setListName("");
+  }, [setListName, setLists]);
 
   const listDone = () => {
     setCreating(false);
