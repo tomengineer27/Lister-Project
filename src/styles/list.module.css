@@ -1,0 +1,88 @@
+.notFound {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px
+}
+
+.list h1 {
+  align-self: flex-start;
+}
+
+.list a {
+  color:black;
+}
+
+.addTaskSection{
+  width: 100%;
+  height: 46px;
+  margin-top: 10px;
+  display: flex;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.addTaskButton {
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 18px;
+}
+
+.addTaskButton:hover {
+  font-size: 20px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.addTaskSection .taskName {
+  width: 85%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.taskName:focus{
+  background-color: rgb(236, 236, 236);
+  font-size: 18px;
+  transition: .2s;
+}
+
+.addTaskSection .done {
+  width: 15%;
+  border: none;
+  outline: none;  
+  background-color: black;
+  color: white;
+  font-size: 18px;
+}
+
+.done:hover {
+  font-size: 20px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.tasks {
+  width: 99.9%;
+  margin-top: 9px;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.sortable-drag {
+  opacity: 0;
+}

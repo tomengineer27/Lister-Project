@@ -1,0 +1,106 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.home h1 {
+  align-self: flex-start;
+}
+
+.createSection{
+  width: 100%;
+  height: 46px;
+  margin-top: 10px;
+  display: flex;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.createSection .create {
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 18px;
+}
+
+.create:hover {
+  font-size: 20px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.createSection .listname {
+  width: 85%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.listname:focus {
+  background-color: rgb(236, 236, 236);
+  font-size: 18px;
+  transition: .2s;
+}
+
+.createSection .done {
+  width: 15%;
+  border: none;
+  outline: none;  
+  background-color: black;
+  color: white;
+  font-size: 18px;
+}
+
+.done:hover {
+  font-size: 20px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.listsMenu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 15px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.listsMenu a {
+  width: 180px;
+  height: 270px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+  color:black;
+  box-sizing: border-box;
+}
+
+.listsMenu h3 {
+  margin: 10px;
+  font-size: 23px;
+}
+
+.listsMenu a button {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(201, 7, 7);
+  font-size: 17px;
+  color: white;
+  border: none;
+}
+
+.listsMenu a button:hover {  
+  background-color: rgb(255, 0, 0);
+  cursor: pointer;
+  transition: .2s;
+}
